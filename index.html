@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a9ce250787.js" crossorigin="anonymous"></script>
+    <title>Instagram Bootstrap</title>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container-fluid p-3">
+      <div class="row display-flex justify-content-center">
+           <!--nav dropdown -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h3><i class="fa-brands fa-instagram font-weight-bold"></h3></i></a>
+            <a class="nav-link active" aria-current="page " href="#"><h5>Instagram</h5></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent font-weight-bold">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>  
+              <!--button new post and settings-->
+              <div class="btn-group">
+                <!-- button -->
+                <button type="button" class="btn btn-primary border-0" style="background-color:green; border-radius: 5px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button> &nbsp;&nbsp;
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <!-- Message floating label-->
+                      <div class="col-md-6 w-100 p-3">
+                        <h6 label for="inputMessage" class="form-label" >Caption:</h6></label> 
+                        <textarea class="form-control" aria-label="With textarea">Add the caption of your post here</textarea>
+                      </div>
+                      <!-- <div class=" icon d-flex text-center justify-contenCt m-2 p-2">
+                          <i class="fa-solid fa-camera"></i>
+                          <i class="fa-solid fa-location-dot"></i>
+                      </div> -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:grey; border-radius: 5px; border: none;">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- BOTONES CAMBIO MOSAICO -->
+      <div class="galery">
+        <ul class="nav nav-tabs border border-0 d-flex justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link border border-0 Active" id="grid-container-tab" data-bs-toggle="tab" data-bs-target="#grid-container" type="button" role="tab" aria-selected="true"><i class="fa-solid fa-table-cells"></i>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link border border-0" id="vertical-container-tab" data-bs-toggle="tab" data-bs-target="#vertical-container" type="button" role="tab" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <!-- CONTENEDOR GRID (FORMATO FILAS Y COLUMNAS) -->
+          <div class="tab-pane show active" id="grid-container" role="tabpanel" aria-labelledby="grid-container-tab">
+            <!-- FILA UNO -->
+            <div class="row">
+              <div class="col m2 p-2">
+                  <img src="https://adistancia.ucontinental.edu.pe/new/wp-content/uploads/2021/09/por-que-estudiar-una-carrera-a-distancia-sera-una-tendencia-en-el-2021-universidad-continental.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              </div>
+              <div class="col m2 p-2" >
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20201117075234_1200.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              </div>
+              <div class="col m2 p-2" >
+                <img src="https://okdiario.com/img/2017/03/31/de-paseo-por-el-corazon-humano-b-655x368.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              </div>
+            </div>
+            <!-- FILA DOS -->
+            <div class="row">
+              <div class="col m2 p-2" >
+                <img src="https://img.freepik.com/fotos-premium/flores-praderas-laderas-bosques-fondos-pantalla-ilustraciones-hermosos-paisajes-fondo_912113-15415.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              </div>
+              <div class="col m2 p-2" >
+                <img src="https://www.ufv.es/cetys/blog/wp-content/uploads/2022/08/sports-tools-scaled.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              </div>
+              <div class="col m2 p-2" >
+                <img src="https://us.123rf.com/450wm/serghii/serghii2306/serghii230600062/207842754-olas-en-la-playa-como-fondo-hermoso-fondo-natural-de-verano-concepto-de-vacaciones-de-verano.jpg?ver=6" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              </div>
+            </div>
+          </div>
+          <!-- CONTENEDOR VERTICAL -->
+          <div class="tab-pane gap-3 d-grid p-2 active show" id="vertical-container" role="tabpanel" aria-labelledby="vertical-container-tab">
+            <div class="card" style="width: 40rem; justify-content: center; margin: auto">
+              <div class="d-flex p-2">
+                <h2 class="w-75">Studying like never before</h2>
+                <span class="fw w-25 text-end">15/25</span>
+              </div>
+              <img src="https://adistancia.ucontinental.edu.pe/new/wp-content/uploads/2021/09/por-que-estudiar-una-carrera-a-distancia-sera-una-tendencia-en-el-2021-universidad-continental.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              <div class="card-body p-2">
+                <h5 class="card-title">26985 Likes</h5> 
+                <p class="card-text">This is an example of a very good photo that yoy can post on Instagram </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane gap-3 d-grid p-2 active show" id="vertical-container" role="tabpanel" aria-labelledby="vertical-container-tab">
+            <div class="card" style="width: 40rem; justify-content: center; margin: auto">
+              <div class="d-flex p-2">
+                <h2 class="w-75">Neuron explosion</h2>
+                <span class="fw w-25 text-end">30/45</span>
+              </div>
+              <img src="https://img.europapress.es/fotoweb/fotonoticia_20201117075234_1200.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              <div class="card-body p-2">
+                <h5 class="card-title">2839 Likes</h5> 
+                <p class="card-text">This is an example of a very good photo that yoy can post on Instagram </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane gap-3 d-grid p-2 active show" id="vertical-container" role="tabpanel" aria-labelledby="vertical-container-tab">
+            <div class="card" style="width: 40rem; justify-content: center; margin: auto">
+              <div class="d-flex p-2">
+                <h2 class="w-75">Big heart</h2>
+                <span class="fw w-25 text-end">50/65</span>
+              </div>
+              <img src="https://okdiario.com/img/2017/03/31/de-paseo-por-el-corazon-humano-b-655x368.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              <div class="card-body p-2">
+                <h5 class="card-title">1976 Likes</h5> 
+                <p class="card-text">This is an example of a very good photo that yoy can post on Instagram </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane gap-3 d-grid p-2 active show" id="vertical-container" role="tabpanel" aria-labelledby="vertical-container-tab">
+            <div class="card" style="width: 40rem; justify-content: center; margin: auto">
+              <div class="d-flex p-2">
+                <h2 class="w-75">The best landscape</h2>
+                <span class="fw w-25 text-end">70/85</span>
+              </div>
+              <img src="https://img.freepik.com/fotos-premium/flores-praderas-laderas-bosques-fondos-pantalla-ilustraciones-hermosos-paisajes-fondo_912113-15415.jpg" alt="Galeria Imagen" w-100 h-400px>
+              <div class="card-body p-2">
+                <h5 class="card-title">1773 Likes</h5> 
+                <p class="card-text">This is an example of a very good photo that yoy can post on Instagram </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane gap-3 d-grid p-2 active show" id="vertical-container" role="tabpanel" aria-labelledby="vertical-container-tab">
+            <div class="card" style="width: 40rem; justify-content: center; margin: auto">
+              <div class="d-flex p-2">
+                <h2 class="w-75">The best sports in history</h2>
+                <span class="fw w-25 text-end">90/105</span>
+              </div>
+              <img src="https://www.ufv.es/cetys/blog/wp-content/uploads/2022/08/sports-tools-scaled.jpg" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              <div class="card-body p-2">
+                <h5 class="card-title">3818 Likes</h5> 
+                <p class="card-text">This is an example of a very good photo that yoy can post on Instagram </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane gap-3 d-grid p-2 active show" id="vertical-container" role="tabpanel" aria-labelledby="vertical-container-tab">
+            <div class="card" style="width: 40rem; justify-content: center; margin: auto">
+              <div class="d-flex p-2">
+                <h2 class="w-75">Blue well</h2>
+                <span class="fw w-25 text-end">110/125</span>
+              </div>
+              <img src="https://us.123rf.com/450wm/serghii/serghii2306/serghii230600062/207842754-olas-en-la-playa-como-fondo-hermoso-fondo-natural-de-verano-concepto-de-vacaciones-de-verano.jpg?ver=6" alt="Galeria Imagen" style="width: 100%; height: 400px;">
+              <div class="card-body p-2">
+                <h5 class="card-title">3210Likes</h5> 
+                <p class="card-text">This is an example of a very good photo that yoy can post on Instagram </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Scripts should always be before the </body> closing tag -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
